@@ -3,7 +3,7 @@
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/8-grupe-portfolio-netlify/
+Site published at https://front-end-by-rimantas.github.io/8-grupe-portfolio-netlify/index.html
 
 Design: [Netlify template](https://new-per.netlify.com/demo-3.html)
 
