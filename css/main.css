@@ -6,6 +6,8 @@ body * {
     box-sizing: border-box;
 }
 
+/* ccolor classes */
+
 .bg-white {
     background-color: var(--white-color);
 }
@@ -16,6 +18,7 @@ body * {
     background-color: var(--dark-color);
 }
 
+/* basic structure and responsive design */
 
 .container {
     display: inline-block;
@@ -51,3 +54,29 @@ body * {
                 margin: 0;
             }
     }
+
+    /* headings */
+
+    /* header */
+
+    /* hero */
+
+    /* about me */
+
+    /* my skills */
+
+    /* my resume */
+
+    /* accomplishments */
+
+    /* services */
+
+    /* my portfolio */
+
+    /* testimonials */
+
+    /* my blogs */
+
+    /* contact me */
+
+    /* footer start */
