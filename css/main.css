@@ -6,6 +6,11 @@ body * {
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
 /* ccolor classes */
 
 .bg-white {
@@ -27,12 +32,13 @@ body * {
 }
     .container > .row {
         display: inline-block;
-        width: 1200px;
-        margin: 0 calc((100% - 1200px) / 2);
+        width: 1400px;
+        margin: 0 calc((100% - 1400px) / 2);
     }
 
     @media ( max-width: 1300px ) {
-        .container > .row {
+        .container > .row,
+        .nav-container .nav-row {
             width: 900px;
             margin: 0 calc((100% - 900px) / 2);
         }
@@ -88,8 +94,86 @@ body * {
         }
 
     /* header */
+    .nav-container {
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        background-color: var(--white-color);
+        width: 100%;
+        z-index: 1;
+    }
+
+        .nav-container .nav-row {
+            width: 1140px;
+            height: 60px;
+            line-height: 60px;
+        }
+        
+            .logo {
+                display:inline-block;
+                float: left;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+
+                .logo img {
+                    display:inline-block;
+                    width: 100px;
+                }
+
+            .nav-right{
+                display: inline-block;
+                float: right;
+                justify-content: space-between;
+                margin: 0;
+                text-align: center;
+                padding-right: 30px;
+            }
+
+                .nav-right a {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: var(--dark-color);
+                    font-size: 15px;
+                    margin-left: 26px;
+                }
+
+                .nav-right a:first-child {
+                    color: var(--purple-color);
+                    margin: 0;
+                }
+
+                .nav-right a:hover {
+                    transition: color 0.5s ease;
+                    color: var(--purple-color);
+                }
+
+    /* navigation responsive */
+                @media ( max-width: 1300px ) {
+                    .nav-container .nav-row {
+                        width: 950px;
+                        margin: 0 calc((100% - 950px) / 2);
+                    }
+                }
+                    @media ( max-width: 1000px ) {
+                        .nav-container .nav-row {
+                            width: 700px;
+                            margin: 0 calc((100% - 700px) / 2);
+                        }
+                    }
+                        @media ( max-width: 800px ) {
+                                .nav-container .nav-row {
+                                    width: 100%;
+                                    margin: 0;
+                                }
+                        }
 
     /* hero */
+    .hero-continer {
+        margin-top: 60px;
+    }
 
     /* about me */
 
