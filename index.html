@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Netlify</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/buttons.css" />
@@ -12,35 +14,43 @@
     <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="css/testimonials.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:500,900&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- header start -->
-    <header class="container">
-      <div class="row">
-        header
+    <header class="container nav-container">
+      <div class="row nav-row">
+          <a href="#" class="logo"><img src="img/logo-black.png" alt="logo-black"/></a>
+          <nav class="nav-right">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#client">client</a>
+            <a href="#blog">blog</a>
+            <a href="#contact">contact</a>
+          </nav>
       </div>
     </header>
     <!-- header end -->
-
+  
     <!-- hero start -->
-    <div class="container hero-continer bg-dark">
-      <div class="row hero-text-box">
-        <span class="">wellcome</span>
-        <h1 class="">i am john doe</h1>
-        <div class="row printed-texts">
-          <p>web developer | photographer | ui/ux designer</p>
-        </div>
-        <div id="hero_icons" class="row hero-link"></div>
+    <div class="container hero-container bg-dark">
+        <div class="container hero-continer bg-dark">
+            <div class="row hero-text-box">
+              <span class="">wellcome</span>
+              <h1 class="">i am john doe</h1>
+              <div class="row printed-texts">
+                <p>web developer | photographer | ui/ux designer</p>
+              </div>
+              <div id="hero_icons" class="row hero-link"></div>
+            </div>
+          </div>
       </div>
     </div>
     <!-- hero end -->
 
     <!-- about me start -->
-    <div class="container bg-white">
+    <div id="about" class="container bg-white">
       <div class="row">
         <h2><span>about</span> me</h2>
       </div>
@@ -72,7 +82,7 @@
     <!-- accomplishments end -->
 
     <!-- services start -->
-    <div class="container bg-grey">
+    <div id="services" class="container bg-grey">
       <div class="row heading-center">
         <h2><span>my</span> srevices</h2>
       </div>
@@ -80,7 +90,7 @@
     <!-- services end -->
 
     <!-- my portfolio start -->
-    <div class="container bg-white">
+    <div id="portfolio" class="container bg-white">
       <div class="row heading-center">
         <h2><span>my</span> portfolio</h2>
       </div>
@@ -88,7 +98,7 @@
     <!-- my portfolio end -->
 
     <!-- testimonials start -->
-    <div class="container bg-grey">
+    <div id="client" class="container bg-grey">
       <div class="row">
         testimonials
       </div>
@@ -96,7 +106,7 @@
     <!-- testimonials end -->
 
     <!-- my blogs start -->
-    <div class="container bg-white">
+    <div id="blog" class="container bg-white">
       <div class="row heading-center">
         <h2><span>latest</span> blog</h2>
       </div>
@@ -104,7 +114,7 @@
     <!-- my blogs end -->
 
     <!-- contact me start -->
-    <div class="container bg-grey">
+    <div id="contact" class="container bg-grey">
       <div class="row">
         <h2><span>get</span> in touch</h2>
       </div>
