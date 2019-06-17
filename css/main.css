@@ -242,6 +242,95 @@ html {
     /* my skills */
 
     /* my resume */
+    .resume-content {
+        width: 100%;
+        display: inline-block;
+        padding-top: 50px;
+    }
+        .resume-content .resume-content-left {
+            width: 50%;
+            display: inline-block;
+            float: left;
+            text-align: right;
+
+        }
+        .resume-content .resume-content-right {
+            width: 50%;
+            display: inline-block;
+            float: right;
+            text-align: left;
+        }
+            .resume-content .resume-content-left ul {
+                display: inline-block;
+                border-right: 1px solid var(--dark-color);
+                margin-right: 50px;
+            }
+            .resume-content .resume-content-right ul {
+                display: inline-block;
+                border-left: 1px solid var(--dark-color);
+                margin-left: 50px;
+            }
+                .fa-book, .fa-briefcase {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    background-color: var(--dark-color);
+                    color: var(--white2-color);
+                    text-align: center;
+                }
+                .icon-left {
+                    margin-right: -20px;
+                }
+                .icon-right {
+                    margin-left: -20px;
+                }
+                .resume-content ul li {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0 30px 0 30px;
+                    margin-top: 30px;
+                    position: relative;
+                }
+
+                li::after {
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 2px solid var(--purple-color);
+                    background-color: var(--dark-color);
+                    position: absolute;
+                    top: 0px;
+                }
+                .left-li::after {
+                    right: -8px;
+                }
+                .right-li::after {
+                    left: -8px;
+                }
+
+                    .resume-content li span {
+                        display: inline-block;
+                        width: 100%;
+                        text-transform: capitalize;
+                        font-size: 12px;
+                    }
+                        .resume-content li h5 {
+                            display: inline-block;
+                            width: 100%;
+                            color: var(--purple-color);
+                            text-transform: uppercase;
+                            font-size: 15px;
+                            margin: 15px 0 10px;
+                        }
+                            .resume-content li h6 {
+                                display: inline-block;
+                                width: 100%;
+                                text-transform: capitalize;
+                                font-size: 13px;
+                            }
 
     /* accomplishments */
 
