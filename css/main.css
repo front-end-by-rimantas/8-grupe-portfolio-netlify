@@ -172,9 +172,71 @@ html {
 
     /* hero */
     .hero-continer {
-        margin-top: 60px;
+        display: inline-block;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
 
+        .hero-continer .hero-text-box {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-continer .hero-text-box span{ 
+            display: inline-block;
+            width: 100%;
+            font-size: 24px;
+            font-weight: 400px;
+            color: var(--greyHero-color);
+            margin-bottom: 30px;
+        }
+
+        .hero-continer .hero-text-box h1 {
+            display: inline-block;
+            font-size: 64px;
+            font-weight: normal;
+            color: var(--white-color);
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .hero-continer .hero-text-box .printed-texts {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 20px;
+            color: var(--greyHero-color);
+            margin-bottom: 30px;
+            letter-spacing: 2px
+        }
+
+        .hero-text-box .hero-link a {
+            display: inline-block;
+            color: var(--white-color);
+            text-decoration: none;
+            font-size: 14px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: rgba(0,0,0,0.1);;
+        }
+        
+        .hero-text-box .hero-link a:hover {
+            transition: background-color 0.5s ease;
+            background-color: var(--purple-color);
+        }
     /* about me */
 
     /* my skills */
