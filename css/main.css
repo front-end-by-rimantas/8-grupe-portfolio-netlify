@@ -380,7 +380,46 @@ html {
     /* accomplishments */
 
     /* services */
-
+    #services {
+        display: grid;
+        justify-items: center;
+    }
+        .services-wrapper {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 1140px;
+            margin-top: 50px;
+        }
+            .services-content {
+                display: inline-block;
+                text-align: center;
+                border: 1px solid;
+                padding: 25px;
+            }
+            .services-content i {
+                display: inline-block;
+                padding: 25px;
+                color: var(--purple-color);
+                background-color: var(--white-color);
+                border-radius: 50%;
+                font-size: 25px;
+                
+            }
+                .services-content i:hover {
+                    transition: color 1s ease;
+                    color: var(--white-color);
+                    background-color: var(--purple-color);
+                }
+            .services-content h5 {
+                display: inline-block;
+                width: 100%;
+                padding: 15px 0;
+            }
+            .services-content p {
+                display: inline-block;
+                width: 100%;
+            }
     /* my portfolio */
 
     /* testimonials */
