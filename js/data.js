@@ -1,5 +1,84 @@
 "use strict";
 
+// gallery
+
+var galleryFilter = [
+    {
+        filter: 'all',
+    },
+    {
+        filter: 'brand',
+    },
+    {
+        filter: 'design',
+    },
+    {
+        filter: 'photo',
+    },
+    {
+        filter: 'video',
+    },
+]
+
+var gallery = [
+    {
+        img: 'portfolio-1.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-2.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-3.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-4.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-5.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-6.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-7.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+    {
+        img: 'portfolio-8.jpg',
+        header: 'web design',
+        link: '#',
+        linkIcon: 'link',
+        spanIcon: 'bullseye',
+    },
+]
+
 // services
 
 var servicesBox = [
