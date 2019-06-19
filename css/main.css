@@ -450,10 +450,11 @@ html {
                     width: 800px;
                     padding-top: 100px;
                     padding-bottom: 50px;
-                }
+                    }
                 .services_wrapper::after{
                     display: none;
                 }
+            }
                 @media ( max-width: 850px ) {
                     .services_wrapper {
                         grid-template-columns:repeat(2, 1fr);
@@ -461,19 +462,20 @@ html {
                         padding-top: 50px;
                         padding-bottom: 25px;
                     }
+                }
 
                     @media ( max-width: 600px ) {
                         .services_wrapper {
                             grid-template-columns:repeat(1, 1fr);
                             width: 400px;
                         }
+                    }
                         @media ( max-width: 450px ) {
                             .services_wrapper {
                                 grid-template-columns:repeat(1, 1fr);
                                 width: 90%;
                             }
-                        
-            }
+                        }
     /* my portfolio */
 
     /* testimonials */
