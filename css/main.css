@@ -381,44 +381,98 @@ html {
 
     /* services */
     #services {
-        display: grid;
-        justify-items: center;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        
     }
-        .services-wrapper {
-            display: grid;
-            grid-template-columns:repeat(3, 1fr);
-            grid-gap: 10px;
-            width: 1140px;
-            margin-top: 50px;
+        .services_wrapper::after{
+            content: "";
+            position: absolute;
+            top: 57%;
+            background-color: var(--white-color);
+            width: 90%;
+            height: 1px;
         }
-            .services-content {
+        .services_wrapper {
+            display: inline-grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-gap: 35px;
+            width: 1140px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+            .services_box {
                 display: inline-block;
                 text-align: center;
-                border: 1px solid;
+                border-left: 1px solid var(--white-color);
+                border-right: 1px solid var(--white-color);
                 padding: 25px;
             }
-            .services-content i {
+            .services_box i {
                 display: inline-block;
-                padding: 25px;
+                border-radius: 50%;
+                font-size: 35px;
+                line-height: 65px;
+                width: 65px;
+                height: 65px;
+                transition: all 1s;
                 color: var(--purple-color);
                 background-color: var(--white-color);
-                border-radius: 50%;
-                font-size: 25px;
-                
             }
-                .services-content i:hover {
-                    transition: color 1s ease;
-                    color: var(--white-color);
+                .services_box i:hover {
                     background-color: var(--purple-color);
+                    color: var(--white-color);
                 }
-            .services-content h5 {
+            .services_box h5 {
                 display: inline-block;
                 width: 100%;
                 padding: 15px 0;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;    
             }
-            .services-content p {
+            .services_box p {
                 display: inline-block;
                 width: 100%;
+                font-size: 14px;
+                color: #777;
+                line-height: 30px;
+            }
+
+            /* services responsive */
+
+            @media ( max-width: 1200px ) {
+                .services_wrapper {
+                    width: 800px;
+                    padding-top: 100px;
+                    padding-bottom: 50px;
+                }
+                .services_wrapper::after{
+                    display: none;
+                }
+                @media ( max-width: 850px ) {
+                    .services_wrapper {
+                        grid-template-columns:repeat(2, 1fr);
+                        width: 500px;
+                        padding-top: 50px;
+                        padding-bottom: 25px;
+                    }
+
+                    @media ( max-width: 600px ) {
+                        .services_wrapper {
+                            grid-template-columns:repeat(1, 1fr);
+                            width: 400px;
+                        }
+                        @media ( max-width: 450px ) {
+                            .services_wrapper {
+                                grid-template-columns:repeat(1, 1fr);
+                                width: 90%;
+                            }
+                        
             }
     /* my portfolio */
 
