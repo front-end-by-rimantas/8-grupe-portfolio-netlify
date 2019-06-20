@@ -22,7 +22,7 @@ function generateServicesBox ( data ) {
         var HTML = '';
 
         for ( var i=0; i<data.length; i++) {
-            HTML += `<button class="filter">${data[i].filter}</button>`;
+            HTML += `<div id="filter_button" class="filter">${data[i].filter}</div>`;
         }
         return HTML;
     }
@@ -40,6 +40,21 @@ function generateServicesBox ( data ) {
         }
     
         return HTML;
+    }
+
+    // active class for gallery filters
+    function clickActive() {
+        var filterHead = document.getElementById("gallery_head");
+        var filter_active = filterHead.getElementsByClassName("filter");
+        for (var i = 0; i < filter_active.length; i++) {
+        filter_active[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) { 
+            current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+        });
+        }
     }
 
 // footer

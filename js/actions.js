@@ -8,7 +8,9 @@ document.querySelector('.services_wrapper').innerHTML = generateServicesBox( ser
 
 document.querySelector('.gallery_filter').innerHTML = generateGalleryFilter( galleryFilter );
 
-document.querySelector('.gallery').innerHTML = generateGallery( gallery );
+document.querySelector('.gallery_container').innerHTML = generateGallery( gallery );
+
+clickActive()
 
 // footer
 
