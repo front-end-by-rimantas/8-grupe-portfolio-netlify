@@ -70,12 +70,13 @@ html {
     h2 {
         display: inline-block;
         text-transform: capitalize;
-        font-size: 45px;
-        line-height: 60px;
+        font-size: 35.2px;
+        font-weight: 400;
+        line-height: normal;
         padding-bottom: 10px;
         text-align: center;
         position: relative;
-        color: var(--dark-color);
+        color: var(--darkHeading-color);
         border-bottom: 1px solid var(--white2-color);
     }
 
@@ -245,7 +246,7 @@ html {
     .continer-skills {
             display: inline-block;
             width: 1100px;
-            margin: 60px calc( (100% - 1100px) / 2 );
+            margin: 50px calc( (100% - 1100px) / 2 );
     }
         
         .continer-skills > .row {
@@ -275,9 +276,9 @@ html {
                     width: 100%;
                     margin-bottom: 10px;
                     font-size: 13px;
-                    color: car(--dark-color);
+                    color: var(--dark-color);
                     font-family:'Montserrat', sans-serif;
-                    font-weight: 600;
+                    font-weight: normal;
                     line-height: 20px;
                 }
                 .progress-bar > .bar {
