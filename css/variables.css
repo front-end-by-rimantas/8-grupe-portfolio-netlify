@@ -1,9 +1,11 @@
 :root {
     --white-color: #fff;
+    --white2-color: #f2f2f2;
     --grey-color: #F4F5F8;
     --greyHero-color: #BDBDBD;
     --purple-color: #9C27B0;
     --dark-color: #282830;
+    --darkHeading-color: #484848;
     /* form colors */
     --formDark-color: #495057;
     --formGrey-color: #E9ECEF;
