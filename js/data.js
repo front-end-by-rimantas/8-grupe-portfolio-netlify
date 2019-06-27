@@ -34,6 +34,13 @@ var servicesBox = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae pariatur voluptatum magnam aliquid corrupti.'
     }
 ]
+// contact
+var contactInfo = [
+    {
+        title: 'Contact info',
+        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui'
+    }
+]
 
 // footer
 var heroIcons = [

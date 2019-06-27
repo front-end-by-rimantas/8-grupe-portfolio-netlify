@@ -715,6 +715,16 @@ html {
     /* my blogs */
 
     /* contact me */
+    #contact .form {
+        display: inline-block;
+        float: left;
+        width: 60%;
+    }
+    #contact .info {
+        display: inline-block;
+        float: left;
+        width: 35%;
+    }
 
     /* footer start */
 
