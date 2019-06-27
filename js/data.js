@@ -35,6 +35,32 @@ var servicesBox = [
     }
 ]
 
+//blog
+
+var blog = [
+    {
+        photo: 'blog3.png',
+        link: '#',
+        heading: 'New Bog For Web Designer',
+        date: '25th Oct 2017',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+    },
+    {
+        photo: 'blog2.png',
+        link: '#',
+        heading: 'Latest Mobile Apps',
+        date: '25th Oct 2017',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+    },
+    {
+        photo: 'blog1.png',
+        link: '#',
+        heading: 'You Need Website For Your Business',
+        date: '25th Oct 2017',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+         }
+];
+
 // footer
 var heroIcons = [
     {

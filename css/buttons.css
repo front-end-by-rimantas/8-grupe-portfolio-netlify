@@ -1,0 +1,15 @@
+.btn {
+    position: relative;;
+    padding: 0 10px;
+    bottom: 200px;
+    left: 65px;
+    text-transform: uppercase;
+    background-color: var(--white-color);
+    color: var(--purple-color);
+    text-decoration: none;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    -webkit-transition: border-radius 500ms; /* For Safari 3.1 to 6.0 */
+    transition: border-radius 500ms;
+}
