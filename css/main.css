@@ -545,68 +545,6 @@ html {
                         }
     /* my portfolio */
 
-        .gallery_filter {
-            display: inline-block;
-            text-align: center;
-            padding: 50px 0;
-        }   
-
-            .gallery_filter .filter {
-                display: inline-block;
-                padding: 5px;
-                margin: 0px 10px;
-                cursor: pointer;
-                text-transform: capitalize;
-                color: #777;
-                font-size: 14px;
-                position: relative;
-                letter-spacing: 2px;
-            }
-                .gallery_filter .filter:hover,
-                .active {
-                        color: var(--purple-color);
-                }
-                
-                .gallery_filter  .active {
-                    transition: border .5s;
-                    border-top: 1px solid var(--grey-color);
-                    color: var(--purple-color);
-                }
-                .active::after {
-                    content: '';
-                    width: 3px;
-                    height: 3px;
-                    border-radius: 50%;
-                    position: absolute;
-                    left: 45%;
-                    top: 100%;
-                    background-color: var(--purple-color);
-                }
-
-        .gallery_container {
-
-        }
-
-            .gallery_container .img_box {
-
-            }
-
-            .gallery_container .img_box .overlay {
-
-            }
-
-                .img_box .oerlay h6 {
-
-                }
-
-                    .img_box .oerlay a {
-
-                    }
-
-                        .img_box .oerlay span {
-
-                        }
-
     /* testimonials */
 
     /* my blogs */

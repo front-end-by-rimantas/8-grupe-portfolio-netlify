@@ -1,4 +1,6 @@
 "use strict";
+// hero
+document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
 // services
 
@@ -8,10 +10,6 @@ document.querySelector('.services_wrapper').innerHTML = generateServicesBox( ser
 
 document.querySelector('.gallery_filter').innerHTML = generateGalleryFilter( galleryFilter );
 
-document.querySelector('.gallery_container').innerHTML = generateGallery( gallery );
-
 clickActive()
 
 // footer
-
-document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
