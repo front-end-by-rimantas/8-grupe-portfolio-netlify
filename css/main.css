@@ -716,5 +716,16 @@ html {
 
     /* contact me */
 
-    /* footer start */
-
+    /* footer */
+    footer {
+        padding: 50px 0;
+        text-align: center;
+    }
+        footer > h6 {
+            display: inline-block;
+            font-size: 14px;
+            color: var(--greyHero-color);
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
