@@ -34,13 +34,47 @@ var servicesBox = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae pariatur voluptatum magnam aliquid corrupti.'
     }
 ]
+
 // contact
+
 var contactInfo = [
     {
         title: 'Contact info',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui'
+        info: [
+            {
+                type: 'text',
+                value: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.'
+            }
+        ]    
+    },
+    {
+        icon: 'headphones',
+        info: [
+            {
+                type: 'text',
+                value: '+00123456789'
+            }
+        ] 
+    },
+    {
+        icon: 'paper-plane',
+        info: [
+            {
+                type: 'link',
+                value: 'DEMO@GMAIL.COM'
+            }
+        ]
+    },
+    {
+        icon: 'map-marker',
+        info: [
+            {
+                type: 'text',
+                value: '3481 MELROZE PLACE, LOS ANGELES'
+            }
+        ] 
     }
-]
+];
 
 // footer
 var heroIcons = [

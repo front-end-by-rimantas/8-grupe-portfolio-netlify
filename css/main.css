@@ -720,9 +720,9 @@ html {
         float: left;
         width: 60%;
     }
-    #contact .info {
+    #contact .contact-info {
         display: inline-block;
-        float: left;
+        float: right;
         width: 35%;
     }
 
