@@ -6,8 +6,8 @@ document.querySelector('.services_wrapper').innerHTML = generateServicesBox( ser
 
 // contact
 
-document.querySelector('#contact .form').innerHTML = 'FORM GENERATED';
-document.querySelector('#contact .contact-info').innerHTML = generateContactInfo(contactInfo);
+document.querySelector('#contact .contact-form').innerHTML = generateContactForm( contactForm );
+document.querySelector('#contact .contact-info').innerHTML = generateContactInfo( contactInfo );
 
 // footer
 

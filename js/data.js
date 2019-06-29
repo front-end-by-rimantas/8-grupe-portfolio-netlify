@@ -33,12 +33,79 @@ var servicesBox = [
         title: 'unlimited support',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae pariatur voluptatum magnam aliquid corrupti.'
     }
-]
+];
 
 // contact
 
+var contactForm = {
+
+    fields: [
+        {
+            type: 'input',
+            attr: [
+                {
+                    name: 'type',
+                    value: 'text'
+                },
+                {
+                    name: 'value',
+                    value: ''
+                },
+                {
+                    name: 'placeholder',
+                    value: 'Your Full Name Here'
+                }
+            ],
+            className: ['col-6'],
+            required: true
+        },
+        {
+            type: 'input',
+            attr: [
+                {
+                    name: 'type',
+                    value: 'email'
+                },
+                {
+                    name: 'value',
+                    value: ''
+                },
+                {
+                    name: 'placeholder',
+                    value: 'Your Email Here'
+                }
+            ],
+            className: ['col-6'],
+            required: true
+        },
+        {
+            type: 'textarea',
+            attr: [
+                {
+                    name: 'placeholder',
+                    value: 'Message For Me'
+                }
+            ],
+            value: '',
+            className: ['col-12'],
+            required: true
+        }
+    ],
+    actions: [
+        {
+            style: 'violet',
+            text: 'SEND MESSAGE'
+        }
+    ]
+};
+
+/*  icon: 'user',
+    icon: 'envelope',
+    icon: 'comment'
+*/
+
 var contactInfo = [
-    {
+    /* {
         title: 'Contact info',
         info: [
             {
@@ -46,7 +113,7 @@ var contactInfo = [
                 value: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.'
             }
         ]    
-    },
+    }, */
     {
         icon: 'headphones',
         info: [

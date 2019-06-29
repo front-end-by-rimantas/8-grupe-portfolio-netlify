@@ -18,6 +18,48 @@ function generateServicesBox ( data ) {
 
 // contact
 
+function generateContactForm ( data ) {
+    var HTML = '<contact-form>',
+    field,
+    attrHTML = '',
+    attrInfo,
+    classNames = '';
+
+    for ( var i=0; i<data.fields.length; i++ ) {
+        field = data.fields[i];
+        attrHTML = '';
+        classNames = '';
+    
+        for ( var a=0; a<field.attr.length; a++ ) {
+            attrInfo = field.attr[a];
+            attrHTML = `${attrInfo.name} = "${attrInfo.value}"`;
+        }
+
+        classNames = field.className.join('');
+
+        if (field.type === 'input') {
+            HTML += `<div class="${classNames}">
+                        <input ${attrHTML} required>
+                    </div>`;
+        }
+        if (field.type === 'textarea') {
+            HTML += `<div class="${classNames}">
+                        <textarea ${attrHTML} required></textarea>
+                    </div>`;
+        }
+    }
+
+    HTML += `<div class="actions">`;
+        for ( var i=0; i<data.actions.length; i++ ) {
+            HTML += `<div class="col-12">
+                        <div class="btn btn-big btn-${data.actions[i].style}">${data.actions[i].text}</div>
+                    </div>`;
+        }
+    HTML += `</div>`;
+    HTML += `</contact-form>`;
+    return HTML;
+}
+
 function generateContactInfo ( data ) {
     var HTML = '',
         infoListHTML = '',

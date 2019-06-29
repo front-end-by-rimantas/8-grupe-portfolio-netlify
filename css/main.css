@@ -715,15 +715,18 @@ html {
     /* my blogs */
 
     /* contact me */
-    #contact .form {
+    
+    #contact .contact-form {
         display: inline-block;
         float: left;
         width: 60%;
     }
+        
     #contact .contact-info {
         display: inline-block;
         float: right;
         width: 35%;
+        height: 100%;
     }
 
     /* footer start */
