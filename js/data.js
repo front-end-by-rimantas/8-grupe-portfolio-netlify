@@ -42,6 +42,7 @@ var contactForm = {
     fields: [
         {
             type: 'input',
+            icon: 'user',
             attr: [
                 {
                     name: 'type',
@@ -57,10 +58,11 @@ var contactForm = {
                 }
             ],
             className: ['col-6'],
-            required: true
+            required: true, 
         },
         {
             type: 'input',
+            icon: 'envelope',
             attr: [
                 {
                     name: 'type',
@@ -76,10 +78,12 @@ var contactForm = {
                 }
             ],
             className: ['col-6'],
-            required: true
+            required: true,
+            multiple: true
         },
         {
             type: 'textarea',
+            icon: 'comment',
             attr: [
                 {
                     name: 'placeholder',
@@ -106,14 +110,9 @@ var contactForm = {
 
 var contactInfo = [
     /* {
-        title: 'Contact info',
-        info: [
-            {
-                type: 'text',
-                value: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.'
-            }
-        ]    
-    }, */
+        title: 'Contact Me'
+        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.'     
+    },*/
     {
         icon: 'headphones',
         info: [

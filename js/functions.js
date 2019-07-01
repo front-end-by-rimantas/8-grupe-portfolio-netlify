@@ -32,19 +32,19 @@ function generateContactForm ( data ) {
     
         for ( var a=0; a<field.attr.length; a++ ) {
             attrInfo = field.attr[a];
-            attrHTML = `${attrInfo.name} = "${attrInfo.value}"`;
+            attrHTML += `${attrInfo.name} = "${attrInfo.value}"`;
         }
 
         classNames = field.className.join('');
 
         if (field.type === 'input') {
             HTML += `<div class="${classNames}">
-                        <input ${attrHTML} required>
+                        <input ${attrHTML} maxlength="30">
                     </div>`;
         }
         if (field.type === 'textarea') {
             HTML += `<div class="${classNames}">
-                        <textarea ${attrHTML} required></textarea>
+                        <textarea ${attrHTML} maxlength="300"></textarea>
                     </div>`;
         }
     }
@@ -83,6 +83,12 @@ function generateContactInfo ( data ) {
         HTML += /*
                 <h4>${data[i].title}</4>
                 <p>${data[i].info}</p>
+                <div>
+                        <h4>${data[i].title}</4>
+                    </div>
+                    <div>
+                        <p>${data[i].description}</p>
+                    </div>
                 */
                 `<div class="info-box">
                     <i class="fa fa-${data[i].icon}"></i>
