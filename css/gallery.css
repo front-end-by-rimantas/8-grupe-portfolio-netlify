@@ -1,0 +1,148 @@
+#portfolio {
+
+}
+.gallery_filter {
+    display: inline-block;
+    text-align: center;
+    padding: 50px 0;
+}   
+
+    .gallery_filter .filter {
+        display: inline-block;
+        padding: 5px;
+        margin: 0px 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+        color: #777;
+        font-size: 14px;
+        position: relative;
+        letter-spacing: 2px;
+    }
+        .gallery_filter .filter:hover,
+        .active {
+                color: var(--purple-color);
+        }
+        
+        .gallery_filter  .active {
+            transition: border .5s;
+            border-top: 1px solid var(--grey-color);
+            color: var(--purple-color);
+        }
+        .active::after {
+            content: '';
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            position: absolute;
+            left: 45%;
+            top: 100%;
+            background-color: var(--purple-color);
+        }
+.gallery_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    .gallery_wrap {
+        width: 1140px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(11, 4vw);
+        grid-gap: 10px;
+    }
+        .img_box_1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-image: url(../img/portfolio/portfolio-1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            background-image: url(../img/portfolio/portfolio-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_3 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-image: url(../img/portfolio/portfolio-3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            background-image: url(../img/portfolio/portfolio-4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_5 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 8;
+            background-image: url(../img/portfolio/portfolio-5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_6 {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            background-image: url(../img/portfolio/portfolio-6.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_7 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 12;
+            grid-row-end: 8;
+            background-image: url(../img/portfolio/portfolio-7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img_box_8 {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 8;
+            grid-row-end: 12;
+            background-image: url(../img/portfolio/portfolio-8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .gallery_wrap .img_box .overlay {
+            
+        }
+
+            .img_box .oerlay h6 {
+
+            }
+
+                .img_box .oerlay a {
+
+                }
+
+                    .img_box .oerlay span {
+
+                    }
