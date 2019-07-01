@@ -765,8 +765,11 @@ html {
     #contact .contact-info {
         display: inline-block;
         float: right;
+        background-image: linear-gradient(to top, rgba(153, 0, 204, 0.7), rgba(153, 0, 204, 0.7)), url(../img/contactme.jpg);
+        background-repeat: no-repeat;
         width: 35%;
-        
+        height: 400px;
+        margin-top: -20px; 
     }
     
     /* contact me end */
