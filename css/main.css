@@ -767,11 +767,50 @@ html {
         float: right;
         background-image: linear-gradient(to top, rgba(153, 0, 204, 0.7), rgba(153, 0, 204, 0.7)), url(../img/contactme.jpg);
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 35%;
-        height: 400px;
-        margin-top: -20px; 
+        height: 450px;
+        margin-top: -90px;
     }
-    
+        .contact-info > .info-box {
+            width: 100%;
+            min-height: 70px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+            .contact-info > .info-box > i {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                float: left;
+                color: #f6f3f3;
+                border: 1px solid #f6f3f3;
+                border-radius: 50%;
+                line-height: 50px;
+                text-align: center;
+            }
+            .contact-info > .info-box > div {
+                display: inline-block;
+                width: calc (100% -70px);
+            }
+                .contact-info > .info-box > div > p {
+                    display: inline-block;
+                    width: 100%;
+                    margin-left: 15px;
+                    color: #f6f3f3;
+                    font-size: 17px;
+                }
+                    .contact-info .info-box div a {
+                        display: inline-block;
+                        width: 100%;
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        color: #f6f3f3;
+                        text-decoration: none;
+                    }
+        
     /* contact me end */
 
     /* footer start */
