@@ -40,11 +40,13 @@ function generateContactForm ( data ) {
 
         if (field.type === 'input') {
             HTML += `<div class="${classNames}">
+                        <i class="fa fa-${contactForm.fields[i].icon}"></i>
                         <input ${attrHTML} maxlength="30">
                     </div>`;
         }
         if (field.type === 'textarea') {
             HTML += `<div class="${classNames}">
+                        <i class="fa fa-${contactForm.fields[i].icon}"></i>
                         <textarea ${attrHTML} maxlength="300"></textarea>
                     </div>`;
         }
@@ -81,17 +83,7 @@ function generateContactInfo ( data ) {
             }
         }
 
-        HTML += /*
-                <h4>${data[i].title}</4>
-                <p>${data[i].info}</p>
-                    <div>
-                        <h4>${data[i].title}</4>
-                    </div>
-                    <div>
-                        <p>${data[i].description}</p>
-                    </div>
-                */
-                `<div class="info-box">
+        HTML += `<div class="info-box"> 
                     <i class="fa fa-${data[i].icon}"></i>
                     <div>
                         <p>${infoListHTML}</p>
@@ -100,6 +92,14 @@ function generateContactInfo ( data ) {
     }
     return HTML;
 } 
+/*`
+                    <div>
+                    <i class="fa fa-${contactForm.fields[i].icon}"></i>
+                        <h4>${contactInfo.data[i].title}</4>
+                    </div>
+                    <div>
+                        <p>${data[i].description}</p>
+                    </div> */
 
 // footer
 

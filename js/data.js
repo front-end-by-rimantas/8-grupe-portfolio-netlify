@@ -103,16 +103,16 @@ var contactForm = {
     ]
 };
 
-/*  icon: 'user',
-    icon: 'envelope',
-    icon: 'comment'
-*/
-
 var contactInfo = [
-    /* {
-        title: 'Contact Me'
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.'     
-    },*/
+  /* {
+        title: 'Contact Me',
+        description: [
+            {
+                type: 'text',
+                value: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.' 
+            }
+        ]
+   }, */
     {
         icon: 'headphones',
         info: [
