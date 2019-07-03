@@ -34,6 +34,7 @@ function generateContactForm ( data ) {
             attrInfo = field.attr[a];
             attrHTML += `${attrInfo.name} = "${attrInfo.value}"`;
         }
+        // console.log(field);
 
         classNames = field.className.join('');
 
@@ -83,7 +84,7 @@ function generateContactInfo ( data ) {
         HTML += /*
                 <h4>${data[i].title}</4>
                 <p>${data[i].info}</p>
-                <div>
+                    <div>
                         <h4>${data[i].title}</4>
                     </div>
                     <div>

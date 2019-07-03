@@ -744,11 +744,12 @@ html {
                 cursor: pointer;
             }
             #contact .contact-form .col-12 textarea {
-                /*resize: none;*/
                 display: inline-block;
                 background-color: #f6f3f3;
                 font-size: 20px;
-                max-width: 100%;
+                width: 100%;
+                height: 120px;
+                resize: none;
                 border-radius: 10px;
                 border: none;
                 outline: none;
@@ -792,8 +793,7 @@ html {
                 text-align: center;
             }
             .contact-info > .info-box > div {
-                display: inline-block;
-                width: calc (100% -70px);
+                display: inline-block;        
             }
                 .contact-info > .info-box > div > p {
                     display: inline-block;
