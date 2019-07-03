@@ -55,6 +55,41 @@ var servicesBox = [
     }
 ]
 
+//blog
+
+var blog = [
+    {
+        photo: 'blog3.png',
+        link: '#',
+        btnBlog: 'UX/UI',
+        titles: 'light trails on highway',
+        miniphoto: 'blog6.png',
+        author: 'jack daniel',
+        date: '25 april 2017',
+        description: 'Quisque dui at erat auctor pulvinar nisl felis, gravida et aliquam vitae, aliquet quis nibh.',
+    },
+    {
+        photo: 'blog2.png',
+        link: '#',
+        btnBlog: 'Web Design',
+        titles: 'riomaggiore coast scene',
+        miniphoto: 'blog4.png',
+        author: 'rim belou',
+        date: '25 june 2017',
+        description: 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been dummy',
+    },
+    {
+        photo: 'blog1.png',
+        link: '#',
+        btnBlog: 'development',
+        titles: '10 secrets tips for web design',
+        miniphoto: 'blog5.png',
+        author: 'ken andrew',
+        date: '25 july 2017',
+        description: 'Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, incid idunt ut labore et. Citius, altius, fortius',
+         }
+];
+
 // footer
 var heroIcons = [
     {
