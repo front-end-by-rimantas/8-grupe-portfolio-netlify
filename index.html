@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Netlify</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900&display=swap&subset=latin-ext" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -39,7 +39,7 @@
                 <span class="">wellcome</span>
                 <h1 class="">i am john doe</h1>
                 <div class="row printed-texts">
-                  <p>web developer | photographer | ui/ux designer</p>
+                  web developer | photographer | ui/ux designer
                 </div>
                 <div id="hero_icons" class="row hero-link"></div>
               </div>
@@ -49,9 +49,30 @@
 
     <!-- about me start -->
     <div id="about" class="container bg-white">
-      <div class="row">
-        <h2><span>about</span> me</h2>
-      </div>
+      <div class="row about-row">
+            <div class="left">
+                <img src="img/about.jpg" alt="Man">
+            </div>
+            <div class="right">
+                    <h2><span>about</span> me</h2>
+                    <h3>I AM A UI/UX DESIGNER AND A HUMAN</h3>
+                <div class="border-after-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="right-info">
+                    <p class="info"><span>NAME:</span> John Doe</p>
+                    <p class="info"><span>AGE</span>: 27 </p>
+                </div>
+                <div class="left-info">
+                    <p class="info"><span>EMAIL:</span> John_Doe@Gmail.com</p>
+                    <p class="info"><span>LOCATION:</span> Los Angeles, USA</p>
+                </div>
+                <div>
+                    <input type="submit" class="btn" value="DOWNLOAD RESUME">
+                    <input type="submit" class="btn" value="HIRE ME">
+                </div>
+            </div>
+          </div>
     </div>
     <!-- about me end -->
 
@@ -156,44 +177,44 @@
       </div>
       <div class="row resume-content">
        <div class="resume-content-left">
-         <ul class="resume-left">
+         <div class="column resume-left">
            <i class="fa fa-book icon-left"></i>
-           <li class="left-li">
+           <div class="bullet-point left-column">
              <span>jan 2004 - dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-           <li class="left-li">
+           </div>
+           <div class="bullet-point left-column">
              <span>jan 2004 - dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-           <li class="left-li">
+           </div>
+           <div class="bullet-point left-column">
              <span>jan 2004 - dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-         </ul>
+           </div>
+         </div>
        </div>
        <div class="resume-content-right">
-         <ul class="resume-right">
+         <div class="column resume-right">
            <i class="fa fa-briefcase icon-right"></i>
-           <li class="right-li">
+           <div class="bullet-point right-column">
              <span>jan 2004 - dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-           <li class="right-li">
+           </div>
+           <div class="bullet-point right-column">
              <span>Jan 2004 - Dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-           <li class="right-li">
+           </div>
+           <div class="bullet-point right-column">
              <span>Jan 2004 - Dec 2006</span>
              <h5>specialization course</h5>
              <h6>university of studies, poland, cracow</h6>
-           </li>
-         </ul>
+           </div>
+         </div>
        </div>
       </div>
     </div>
@@ -242,9 +263,32 @@
     <!-- services end -->
 
     <!-- my portfolio start -->
-    <div id="portfolio" class="container bg-white">
+    <div id="portfolio" class="container container bg-white">
       <div class="row heading-center">
         <h2><span>my</span> portfolio</h2>
+      </div>
+      <div id="gallery_head" class="row gallery_filter">
+        <!-- <div class="filter">all</div> -->
+      </div>
+        <div class="gallery_container">
+          <div class="gallery_wrap">
+              <div class="img_box_1">
+                </div>
+                <div class="img_box_2">
+                </div>
+                <div class="img_box_3">
+                </div>
+                <div class="img_box_4">
+                </div>
+                <div class="img_box_5">
+                </div>
+                <div class="img_box_6">
+                </div>
+                <div class="img_box_7">
+                </div>
+                <div class="img_box_8">
+                </div>
+          </div>
       </div>
     </div>
     <!-- my portfolio end -->
@@ -252,7 +296,24 @@
     <!-- testimonials start -->
     <div id="client" class="container bg-grey">
       <div class="row">
-        testimonials
+        <div class="testimonial">
+          <h6>awwwesome work</h6>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nostrum provident dolores optio natus cum voluptatum accusantium, saepe dolorem repellendus numquam perspiciatis! Tenetur perspiciatis temporibus, cum distinctio enim suscipit commodi.</p>
+          <h5>jack daniel</h5>
+          <h4>graphic designer</h4>
+        </div>
+      </div>
+      <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
       </div>
     </div>
     <!-- testimonials end -->
@@ -294,10 +355,10 @@
     <!-- contact me end -->
 
     <!-- footer start -->
-    <footer class="container bg-dark">
-      <div class="row">
-        footer
-      </div>
+    <footer class="bg-dark">
+      <h6 class="row">
+        COPY RIGHT © BY A-SHAWKY 2017 | ALL RIGHTS RESERVED.
+      </h6>
     </footer>
     <!-- footer end -->
 

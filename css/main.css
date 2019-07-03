@@ -70,7 +70,7 @@ html {
     h2 {
         display: inline-block;
         text-transform: capitalize;
-        font-size: 35.2px;
+        font-size: 35px;
         font-weight: 400;
         line-height: normal;
         padding-bottom: 10px;
@@ -78,6 +78,8 @@ html {
         position: relative;
         color: var(--darkHeading-color);
         border-bottom: 1px solid var(--white2-color);
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
     }
 
         h2::after {
@@ -239,7 +241,87 @@ html {
             transition: background-color 0.5s ease;
             background-color: var(--purple-color);
         }
+
     /* about me */
+        .row.about-row {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-gap: 50px;
+        }
+            .left > img {
+                display: inline-block;
+                width: 380px;
+                border-width: 8px;  
+                border-style: solid;
+                border-color: rgb(236, 236, 236);
+                float: right;
+            }
+                .about-row .right {
+                    width: 80%;
+                }
+
+                .about-row .right h3 {
+                    font-size: 19px;
+                    margin-top: 50px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    color: #282830;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .right > div > p {
+                    font-size: 16px;
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 30px;
+                    margin: 15px;
+                    text-align: left;
+                    margin-left: 0px;
+                    color: grey;
+                }
+                .right div span {
+                    color: #282830;
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-right: 15px;
+                }
+                .right .info {
+                    font-size: 15px;
+                    font-weight: bold;
+                } 
+                .right-info {
+                    display: inline-block;
+                    width: 50%;
+                    float: left;
+                }
+                .left-info {
+                    display: inline-block;
+                    float: right;
+                    width: 50%;
+                }
+                .border-after-text {
+                    border-bottom: 1px solid rgb(233, 224, 224);
+                }
+                .btn {
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-right: 10px;
+                    padding: 15px 35px;
+                    line-height: 15px;
+                    border-radius: 30px;
+                    border: none;
+                    background-color: var(--purple-color);
+                    font-size: 12px;
+                    color: var(--white-color);
+                    cursor: pointer;
+                    outline: none;
+                }
+                    .btn:hover {
+                        color: grey;
+                        background-color: var(--white-color);
+                        border: none;
+                        transition: 0.7s ease-out;
+                    }
 
     /* my skills */
      
@@ -343,12 +425,12 @@ html {
             float: right;
             text-align: left;
         }
-            .resume-content .resume-content-left ul {
+            .resume-content .resume-content-left > div {
                 display: inline-block;
                 border-right: 1px solid var(--grey-color);
                 margin-right: 35px;
             }
-            .resume-content .resume-content-right ul {
+            .resume-content .resume-content-right > div {
                 display: inline-block;
                 border-left: 1px solid var(--grey-color);
                 margin-left: 35px;
@@ -369,7 +451,7 @@ html {
                 .icon-right {
                     margin-left: -20px;
                 }
-                .resume-content ul li {
+                .resume-content .column div  {
                     display: inline-block;
                     width: 100%;
                     padding: 0 30px 0 30px;
@@ -377,7 +459,7 @@ html {
                     position: relative;
                 }
 
-                li::after {
+                .bullet-point::after {
                     content: "";
                     width: 8px;
                     height: 8px;
@@ -387,20 +469,20 @@ html {
                     position: absolute;
                     top: 0px;
                 }
-                .left-li::after {
-                    right: -8px;
+                .left-column::after {
+                    right: -6px;
                 }
-                .right-li::after {
-                    left: -8px;
+                .right-column::after {
+                    left: -6px;
                 }
 
-                    .resume-content li span {
+                    .resume-content .column span {
                         display: inline-block;
                         width: 100%;
                         text-transform: capitalize;
                         font-size: 12px;
                     }
-                        .resume-content li h5 {
+                        .resume-content .column h5 {
                             display: inline-block;
                             width: 100%;
                             color: var(--purple-color);
@@ -408,7 +490,7 @@ html {
                             font-size: 15px;
                             margin: 15px 0 10px;
                         }
-                            .resume-content li h6 {
+                            .resume-content .column h6 {
                                 display: inline-block;
                                 width: 100%;
                                 text-transform: capitalize;
@@ -417,7 +499,7 @@ html {
 
         /* resume responsive */
                 @media ( max-width: 800px ) {
-                    .resume-content .resume-content-left ul {
+                    .resume-content .resume-content-left div {
                         border-right: none;
                         border-left: 1px solid var(--grey-color);
                         margin-left: 35px;
@@ -441,11 +523,11 @@ html {
                         margin-left: -20px;
                     }
 
-                    .left-li::after {
+                    .left-column::after {
                         display: none;
                     }
 
-                    .left-li::before {
+                    .left-column::before {
                         content: "";
                         width: 8px;
                         height: 8px;
@@ -761,4 +843,16 @@ html {
         
     /* contact me */
 
-    /* footer start */
+    /* footer */
+    footer {
+        padding: 50px 0;
+        text-align: center;
+    }
+        footer > h6 {
+            display: inline-block;
+            font-size: 14px;
+            color: var(--greyHero-color);
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
