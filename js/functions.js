@@ -24,7 +24,7 @@ function generateBlog( data ) {
     for ( var i=0; i<data.length; i++ ) {
         HTML += `<div class="blog">
                     <div class="img" style="background-image: url(img/blog/${data[i].photo});">
-                    <a href="${data[i].link}" class="btn">${data[i].btn}</a></div>
+                    <a href="${data[i].link}" class="btnBlog">${data[i].btn}</a></div>
                     <div class="blogContent">
                         <a href="${data[i].link}" class="titles">${data[i].titles}</a>
                         <p>${data[i].description} ...</p>                   

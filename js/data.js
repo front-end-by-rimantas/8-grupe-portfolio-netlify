@@ -41,7 +41,7 @@ var blog = [
     {
         photo: 'blog3.png',
         link: '#',
-        btn: 'UX/UI',
+        btnBlog: 'UX/UI',
         titles: 'light trails on highway',
         miniphoto: 'blog6.png',
         author: 'jack daniel',
@@ -51,7 +51,7 @@ var blog = [
     {
         photo: 'blog2.png',
         link: '#',
-        btn: 'Web Design',
+        btnBlog: 'Web Design',
         titles: 'riomaggiore coast scene',
         miniphoto: 'blog4.png',
         author: 'rim belou',
@@ -61,7 +61,7 @@ var blog = [
     {
         photo: 'blog1.png',
         link: '#',
-        btn: 'development',
+        btnBlog: 'development',
         titles: '10 secrets tips for web design',
         miniphoto: 'blog5.png',
         author: 'ken andrew',
