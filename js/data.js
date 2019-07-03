@@ -1,5 +1,25 @@
 "use strict";
 
+// gallery
+
+var galleryFilter = [
+    {
+        filter: 'all',
+    },
+    {
+        filter: 'brand',
+    },
+    {
+        filter: 'design',
+    },
+    {
+        filter: 'photo',
+    },
+    {
+        filter: 'video',
+    },
+]
+
 // services
 
 var servicesBox = [
