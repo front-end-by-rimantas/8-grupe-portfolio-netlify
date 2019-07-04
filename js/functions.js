@@ -40,7 +40,9 @@ function generateContactForm ( data ) {
 
         if (field.type === 'input') {
             HTML += `<div class="${classNames}">
-                        <i class="fa fa-${contactForm.fields[i].icon}"></i>
+                        <div>
+                            <i class="fa fa-${contactForm.fields[i].icon}"></i>
+                        </div>
                         <input ${attrHTML} maxlength="30">
                     </div>`;
         }
@@ -82,7 +84,7 @@ function generateContactInfo ( data ) {
                 infoListHTML += `<a href= "mailto:${infoElement.value}">${infoElement.value}</a>`;
             }
         }
-
+        
         HTML += `<div class="info-box"> 
                     <i class="fa fa-${data[i].icon}"></i>
                     <div>
