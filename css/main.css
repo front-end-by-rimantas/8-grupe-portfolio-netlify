@@ -724,12 +724,13 @@ html {
     #contact .contact-form {
         display: inline-block;
         float: left;
-        width: 60%;
+        width: 55%;
         margin-top: 15px; 
     }
          #contact .contact-form .col-6 {
             display: inline-block;
             width: 100%;
+            margin-top: 30px;
             margin-bottom: 30px;
         }
             #contact .contact-form .col-6 input {
@@ -783,7 +784,7 @@ html {
                     font-size: 17px;
                     margin-bottom: 20px;
                 }
-
+    
     #contact .contact-info {
         display: inline-block;
         float: right;
@@ -791,47 +792,58 @@ html {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 35%;
-        height: 450px;
-        margin-top: -90px;
+        width: 40%;
+        height: 500px;
     }
-        .contact-info > .info-box {
-            width: 100%;
-            min-height: 70px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            padding: 10px 20px;
+    
+        #contact .contact-info h4 {
+            color: var(--white-color);
+            font-size: 20px;
+            margin-left: 15px;
         }
-            .contact-info > .info-box > i {
-                display: inline-block;
-                width: 50px;
-                height: 50px;
-                float: left;
-                color: #f6f3f3;
-                border: 1px solid #f6f3f3;
-                border-radius: 50%;
-                line-height: 50px;
-                text-align: center;
+        #contact .contact-info p {
+            color: var(--white-color);
+            font-size: 17px;
+        }
+            .contact-info > .info-box {
+                width: 90%;
+                min-height: 70px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px 10px;
             }
-            .contact-info > .info-box > div {
-                display: inline-block;        
-            }
-                .contact-info > .info-box > div > p {
+                .contact-info > .info-box > i {
                     display: inline-block;
-                    width: 100%;
-                    margin-left: 15px;
+                    width: 50px;
+                    height: 50px;
+                    float: left;
                     color: #f6f3f3;
-                    font-size: 17px;
+                    border: 1px solid #f6f3f3;
+                    border-radius: 50%;
+                    line-height: 50px;
+                    text-align: center;
                 }
-                    .contact-info .info-box div a {
+                .contact-info > .info-box > div {
+                    display: inline-block;        
+                }
+                    .contact-info > .info-box > div > p {
                         display: inline-block;
                         width: 100%;
-                        margin-left: 10px;
-                        margin-top: 10px;
+                        margin-left: 15px;
                         color: #f6f3f3;
-                        text-decoration: none;
+                        font-size: 17px;
                     }
-        
+                    
+                        .contact-info .info-box div a {
+                            display: inline-block;
+                            width: 100%;
+                            margin-left: 10px;
+                            margin-top: 10px;
+                            color: #f6f3f3;
+                            text-decoration: none;
+                        }
+                        
+                        
     /* contact me end */
 
     /* footer start */

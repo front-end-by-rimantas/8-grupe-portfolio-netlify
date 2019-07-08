@@ -24,6 +24,7 @@ function generateContactForm ( data ) {
     attrHTML = '',
     attrInfo,
     classNames = '';
+    HTML += `<h2><span>get</span> in touch</h2>`;
 
     for ( var i=0; i<data.fields.length; i++ ) {
         field = data.fields[i];
@@ -69,6 +70,8 @@ function generateContactInfo ( data ) {
     var HTML = '',
         infoListHTML = '',
         infoElement;
+        HTML += `<h4>Contact Info.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.</p>`;
 
     for ( var i=0; i<data.length; i++ ) {
         infoListHTML = '';
@@ -84,24 +87,16 @@ function generateContactInfo ( data ) {
                 infoListHTML += `<a href= "mailto:${infoElement.value}">${infoElement.value}</a>`;
             }
         }
-        
+      
         HTML += `<div class="info-box"> 
                     <i class="fa fa-${data[i].icon}"></i>
                     <div>
                         <p>${infoListHTML}</p>
-                    </div>
+                    </div> 
                 </div>`;
     }
     return HTML;
 } 
-/*`
-                    <div>
-                    <i class="fa fa-${contactForm.fields[i].icon}"></i>
-                        <h4>${contactInfo.data[i].title}</4>
-                    </div>
-                    <div>
-                        <p>${data[i].description}</p>
-                    </div> */
 
 // footer
 

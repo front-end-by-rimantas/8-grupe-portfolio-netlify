@@ -104,10 +104,7 @@ var contactForm = {
 };
 
 var contactInfo = [
-   /* {
-        title: 'Contact Me'
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi consectetur ipsam ad quasi dignissimos qui.' 
-}*/
+    
     {
         icon: 'headphones',
         info: [
