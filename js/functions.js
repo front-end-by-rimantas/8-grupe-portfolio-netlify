@@ -80,7 +80,7 @@ function generateContactInfo ( data ) {
             infoElement = data[i].info[p];
 
             if ( infoElement.type === 'text' ) {
-                infoListHTML += `<p>${infoElement.value}</p>`;
+                infoListHTML += `${infoElement.value}`;
             }
 
             if ( infoElement.type === 'link') {

@@ -810,14 +810,14 @@ html {
             margin: 5px 35px;
             text-align: justify;
         }
-            .contact-info > .info-box {
+            #contact .contact-info > .info-box {
                 width: 90%;
                 min-height: 70px;
                 margin-top: 10px;
                 margin-bottom: 10px;
                 padding: 10px 10px;
             }
-                .contact-info > .info-box > i {
+                #contact .contact-info > .info-box > i {
                     display: inline-block;
                     width: 50px;
                     height: 50px;
@@ -829,7 +829,7 @@ html {
                     text-align: center;
                     margin-left: 30px;
                 }
-                .contact-info > .info-box > div {
+                #contact .contact-info > .info-box > div {
                     display: inline-block;        
                 }
                     #contact .contact-info .info-box p {
@@ -837,11 +837,10 @@ html {
                         width: 100%;
                         color: #f6f3f3;
                         font-size: 17px;
-                        margin: 5px 10px;
+                        margin: 12px 10px;
                         
                     }
-                    
-                        .contact-info .info-box div a {
+                        #contact .contact-info .info-box div a {
                             display: inline-block;
                             width: 100%;
                             margin-left: 5px;
@@ -849,8 +848,7 @@ html {
                             color: #f6f3f3;
                             text-decoration: none;
                         }
-                        
-                        
+                                          
     /* contact me end */
 
     /* footer start */
