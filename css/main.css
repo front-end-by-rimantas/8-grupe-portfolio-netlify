@@ -719,7 +719,6 @@ html {
     #contact .row {
         background-color: white;
         padding: 20px;
-        border-radius: 8px;
     }
     #contact .contact-form {
         display: inline-block;
@@ -737,7 +736,7 @@ html {
                 display: inline-block;
                 width: 100%;
                 height: 60px;
-                background-color: #f6f3f3;
+                background-color: #F4F5F8;
                 font-size: 20px;
                 border-radius: 5px;
                 border: none;
@@ -748,7 +747,7 @@ html {
             }
             #contact .contact-form .col-12 textarea {
                 display: inline-block;
-                background-color: #f6f3f3;
+                background-color: #F4F5F8;
                 font-size: 20px;
                 width: 100%;
                 height: 120px;
@@ -764,13 +763,14 @@ html {
             #contact .contact-form i {
                 position: absolute;
                 color: #555454;
-                background-color: #e2dddd;
+                background-color: #E3E3E5;
                 padding: 25px 25px;
                 height: 60px;
+                border-radius: 3px;
             }
-                #contact .contact-form .fa-comment {
+                #contact .contact-form .fa-comment { /*textarea*/
                     position: absolute;
-                    background-color: #e2dddd;
+                    background-color: #E3E3E5;
                     padding: 50px 25px;
                     height: 120px;
                     border-radius: 5px;
@@ -778,32 +778,37 @@ html {
                 #contact .contact-form .fa::before  {
                     position: relative;
                 }
-                .actions .btn-big {
+                #contact .actions .btn-big {
                     display: inline-block;
                     width: 100%;
-                    font-size: 17px;
+                    font-size: 19px;
                     margin-bottom: 20px;
                 }
     
     #contact .contact-info {
         display: inline-block;
         float: right;
-        background-image: linear-gradient(to top, rgba(153, 0, 204, 0.7), rgba(153, 0, 204, 0.7)), url(../img/contactme.jpg);
+        background-image: linear-gradient(to top, rgba(151, 41, 163, 0.9), rgba(151, 41, 163, 0.9)), url(../img/contactme.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 40%;
-        height: 500px;
+        height: 558.75px;
+        margin: -20px -21px;
     }
     
         #contact .contact-info h4 {
             color: var(--white-color);
-            font-size: 20px;
-            margin-left: 15px;
+            font-size: 35px;
+            margin: 37px 40px;
+            font-weight: 400;
         }
         #contact .contact-info p {
+            display: inline-block;
             color: var(--white-color);
-            font-size: 17px;
+            font-size: 20px;
+            margin: 5px 35px;
+            text-align: justify;
         }
             .contact-info > .info-box {
                 width: 90%;
@@ -816,29 +821,31 @@ html {
                     display: inline-block;
                     width: 50px;
                     height: 50px;
-                    float: left;
+                    /*float: left;*/
                     color: #f6f3f3;
                     border: 1px solid #f6f3f3;
                     border-radius: 50%;
                     line-height: 50px;
                     text-align: center;
+                    margin-left: 30px;
                 }
                 .contact-info > .info-box > div {
                     display: inline-block;        
                 }
-                    .contact-info > .info-box > div > p {
+                    #contact .contact-info .info-box p {
                         display: inline-block;
                         width: 100%;
-                        margin-left: 15px;
                         color: #f6f3f3;
                         font-size: 17px;
+                        margin: 5px 10px;
+                        
                     }
                     
                         .contact-info .info-box div a {
                             display: inline-block;
                             width: 100%;
-                            margin-left: 10px;
-                            margin-top: 10px;
+                            margin-left: 5px;
+                            margin-top: 5px;
                             color: #f6f3f3;
                             text-decoration: none;
                         }
