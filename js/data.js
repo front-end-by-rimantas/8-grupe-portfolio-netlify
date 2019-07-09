@@ -1,5 +1,55 @@
 "use strict";
 
+// skills
+
+var progressBarleft = [
+    {
+        barTitle: 'PHOTOGRAPHY',
+        barWidth: 'width: 75%;',
+        valueNumber: '75%'
+    },
+    {
+        barTitle: 'BRANDING',
+        barWidth: 'width: 95%;',
+        valueNumber: '95%'
+    },
+    {
+        barTitle: 'GRAPHIC DESIGN',
+        barWidth: 'width: 70%;',
+        valueNumber: '70%'
+    },
+    {
+        barTitle: 'DEVELOPMENT',
+        barWidth: 'width: 80%;',
+        valueNumber: '80%'
+    }
+];
+  
+var progressBarright = [
+
+{
+        barTitle: 'HTML/CSS',
+        barWidth: 'width: 95%;',
+        valueNumber: '95%'
+    },
+    {
+        barTitle: 'JS/JQUERY',
+        barWidth: 'width: 80%;',
+        valueNumber: '80%'
+    },
+    {
+        barTitle: 'PHP/WORDPRESS',
+        barWidth: 'width: 75%;',
+        valueNumber: '75%'
+    },
+    {
+        barTitle: 'PHOTO SHOP',
+        barWidth: 'width: 94%;',
+        valueNumber: '94%'
+    },
+   
+]
+
 // gallery
 
 var galleryFilter = [

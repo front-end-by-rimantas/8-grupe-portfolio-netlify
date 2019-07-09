@@ -14,6 +14,28 @@ function generateIcons( data ) {
     return HTML;
 }
 
+//skills
+
+function generateProgressBar(data) {
+    var HTML = '';
+
+    for ( var i=0; i<data.length; i++) {
+        HTML += `<div class="progressBarleft">
+                    <div class="title">${data[i].barTitle}</div>
+                    <div class="bar">
+                        <div class="bar-value" style="${data[i].barWidth}">
+                            <div class="loading">
+                                <div class="value-number">${data[i].valueNumber}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+        
+    }
+    
+    return HTML;
+}
+
 // services
 
 function generateServicesBox ( data ) {
@@ -39,7 +61,7 @@ function generateBlog( data ) {
     for ( var i=0; i<data.length; i++ ) {
         HTML += `<div class="blog">
                     <div class="img" style="background-image: url(img/blog/${data[i].photo});">
-                    <a href="${data[i].link}" class="btnBlog">${data[i].btn}</a></div>
+                    <a href="${data[i].link}" class="btnBlog">${data[i].btnBlog}</a></div>
                     <div class="blogContent">
                         <a href="${data[i].link}" class="titles">${data[i].titles}</a>
                         <p>${data[i].description} ...</p>                   
@@ -60,6 +82,8 @@ function generateBlog( data ) {
 // footer
 
 // gallery
+
+
     function generateGalleryFilter ( data ) {
         var HTML = '';
 

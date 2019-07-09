@@ -2,6 +2,11 @@
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
+// skills
+
+document.getElementById('blogleft').innerHTML = generateProgressBar(progressBarleft);
+document.getElementById('blogright').innerHTML = generateProgressBar(progressBarright);
+
 // services
 
 document.querySelector('.services_wrapper').innerHTML = generateServicesBox( servicesBox );
