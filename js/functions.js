@@ -14,6 +14,28 @@ function generateIcons( data ) {
     return HTML;
 }
 
+//skills
+
+function generateProgressBar(data) {
+    var HTML = '';
+
+    for ( var i=0; i<data.length; i++) {
+        HTML += `<div class="progressBarleft">
+                    <div class="title">${data[i].barTitle}</div>
+                    <div class="bar">
+                        <div class="bar-value" style="${data[i].barWidth}">
+                            <div class="loading">
+                                <div class="value-number">${data[i].valueNumber}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+        
+    }
+    
+    return HTML;
+}
+
 // services
 
 function generateServicesBox ( data ) {
@@ -30,7 +52,37 @@ function generateServicesBox ( data ) {
     return HTML;
 }
 
+
+//blog
+
+function generateBlog( data ) {
+    var HTML = '';
+
+    for ( var i=0; i<data.length; i++ ) {
+        HTML += `<div class="blog">
+                    <div class="img" style="background-image: url(img/blog/${data[i].photo});">
+                    <a href="${data[i].link}" class="btnBlog">${data[i].btnBlog}</a></div>
+                    <div class="blogContent">
+                        <a href="${data[i].link}" class="titles">${data[i].titles}</a>
+                        <p>${data[i].description} ...</p>                   
+                        <div class="info">
+                            <img src="img/blog/${data[i].miniphoto}" class="minimg" alt="#">
+                            <div class="infoText">
+                                <p><span>BY : </span>${data[i].author}</p>
+                                <h4>${data[i].date}</h4>
+                            </div>
+                        </div>
+                    </div>                               
+                </div>`;
+    }
+
+    return HTML;
+}
+// <a href="${data[i].link}" class="btn">Read more</a>
+// footer
+
 // gallery
+
 
     function generateGalleryFilter ( data ) {
         var HTML = '';
@@ -57,3 +109,10 @@ function generateServicesBox ( data ) {
     }
 
 // footer
+function getDate(){
+    var today = new Date();
+    var year = today.getFullYear();
+    document.getElementById("currentDate").innerHTML = year;
+  }
+  
+  getDate();
