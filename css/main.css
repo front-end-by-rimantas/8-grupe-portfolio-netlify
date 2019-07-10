@@ -848,7 +848,21 @@ html {
                             color: #f6f3f3;
                             text-decoration: none;
                         }
-                                          
+                    
+                        @media (max-width: 1000px) {
+
+                            #contact .contact-info {
+                                width: 100%;
+                                margin: 0px;
+                                float: none;
+                            }
+                            #contact .contact-form {
+                                width: 100%;
+                                margin: 0px;
+                                float: none;
+                            }
+                        }
+                                                             
     /* contact me end */
 
     /* footer start */
