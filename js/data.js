@@ -103,7 +103,106 @@ var servicesBox = [
         title: 'unlimited support',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae pariatur voluptatum magnam aliquid corrupti.'
     }
-]
+];
+
+// contact
+
+var contactForm = {
+
+    fields: [
+        {
+            type: 'input',
+            icon: 'user',
+            attr: [
+                {
+                    name: 'type',
+                    value: 'text'
+                },
+                {
+                    name: 'value',
+                    value: ''
+                },
+                {
+                    name: 'placeholder',
+                    value: 'Your Full Name Here'
+                }
+            ],
+            className: ['col-6'],
+            required: true, 
+        },
+        {
+            type: 'input',
+            icon: 'envelope',
+            attr: [
+                {
+                    name: 'type',
+                    value: 'email'
+                },
+                {
+                    name: 'value',
+                    value: ''
+                },
+                {
+                    name: 'placeholder',
+                    value: 'Your Email Here'
+                }
+            ],
+            className: ['col-6'],
+            required: true,
+            multiple: true
+        },
+        {
+            type: 'textarea',
+            icon: 'comment',
+            attr: [
+                {
+                    name: 'placeholder',
+                    value: 'Message For Me'
+                }
+            ],
+            value: '',
+            className: ['col-12'],
+            required: true
+        }
+    ],
+    actions: [
+        {
+            style: 'violet',
+            text: 'SEND MESSAGE'
+        }
+    ]
+};
+
+var contactInfo = [
+    
+    {
+        icon: 'headphones',
+        info: [
+            {
+                type: 'text',
+                value: '+00123456789'
+            }
+        ] 
+    },
+    {
+        icon: 'paper-plane',
+        info: [
+            {
+                type: 'link',
+                value: 'DEMO@GMAIL.COM'
+            }
+        ]
+    },
+    {
+        icon: 'map-marker',
+        info: [
+            {
+                type: 'text',
+                value: '3481 MELROZE PLACE, LOS ANGELES'
+            }
+        ] 
+    }
+];
 
 //blog
 

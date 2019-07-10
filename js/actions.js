@@ -12,10 +12,17 @@ document.getElementById('blogright').innerHTML = generateProgressBar(progressBar
 document.querySelector('.services_wrapper').innerHTML = generateServicesBox( servicesBox );
 
 
+
+
+
 // blog
 
 document.getElementById('blog_list').innerHTML = generateBlog( blog );
 
+// contact
+
+document.querySelector('#contact .contact-form').innerHTML = generateContactForm( contactForm );
+document.querySelector('#contact .contact-info').innerHTML = generateContactInfo( contactInfo );
 // footer
 
 // portfolio gallery
