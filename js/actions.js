@@ -1,4 +1,6 @@
 "use strict";
+// navigation 
+document.querySelector('nav-row').innerHTML = burger();
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
