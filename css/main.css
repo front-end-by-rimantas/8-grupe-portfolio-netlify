@@ -153,6 +153,9 @@ html {
                     transition: color 0.5s ease;
                     color: var(--purple-color);
                 }
+                #toggle {
+                    display: none;
+                }
 
     /* navigation responsive */
                 @media ( max-width: 1300px ) {
@@ -166,6 +169,33 @@ html {
                             width: 700px;
                             margin: 0 calc((100% - 700px) / 2);
                         }
+                            .nav-container .nav-row .nav-right {
+                                display: none;
+                                flex-flow: column;
+                                align-content: center;
+                                text-align: center;
+                                background-color: white;
+                                width: 100%;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 50px;
+                            }
+                            .active-burger {
+                                display: flex !important;
+                            }
+                            .nav-right a {
+                                margin-left: 0px;
+                            }
+                            #toggle {
+                                display: inline-block;
+                                font-size: 25px;
+                                color: #282830;
+                                position: absolute;
+                                top: 20px;
+                                left: 80%;
+                                cursor: pointer;
+                            }
                     }
                         @media ( max-width: 800px ) {
                                 .nav-container .nav-row {

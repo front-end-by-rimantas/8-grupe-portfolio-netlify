@@ -1,4 +1,14 @@
 "use strict";
+// navigation
+function burger() {
+    var navMobile = document.getElementById('main-nav');
+    var navBarToggle = document.getElementById('toggle');
+
+    navBarToggle.addEventListener('click', function () {        
+        navMobile.classList.toggle('active-burger');
+    });    
+}
+
 // hero
 function generateIcons( data ) {
     var HTML = '';
