@@ -243,10 +243,16 @@ html {
         }
 
     /* about me */
+
         .row.about-row {
+            width: 1100px;
+            margin: 50px calc( (100% - 1100px) / 2 );
             display: grid;
-            grid-template-columns:1fr 1fr;
-            grid-gap: 50px;
+            grid-template-columns: 1fr 1fr;
+            /*grid-column-gap: 80px;*/
+        }
+        .row.about-row .left {
+           
         }
             .left > img {
                 display: inline-block;
@@ -254,10 +260,12 @@ html {
                 border-width: 8px;  
                 border-style: solid;
                 border-color: rgb(236, 236, 236);
-                float: right;
+                /*float: right;*/
             }
                 .about-row .right {
-                    width: 80%;
+                    display: inline-block;
+                    width: 100%;
+                    float: left;
                 }
 
                 .about-row .right h3 {
