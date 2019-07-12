@@ -1,4 +1,14 @@
 "use strict";
+
+// navigation 
+document.querySelector('nav-row').innerHTML = burger();
+
+// general
+window.addEventListener("scroll", function(){
+    headerScrollDetector();
+    headerStyle();
+});
+
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
