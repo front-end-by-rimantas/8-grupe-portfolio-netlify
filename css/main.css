@@ -108,6 +108,9 @@ html {
         z-index: 1;
     }
 
+    #header.transparent {
+        background-color: var(--white-color)transparent;
+    }
         .nav-container .nav-row {
             width: 1140px;
             height: 60px;
@@ -144,8 +147,11 @@ html {
                     margin-left: 26px;
                 }
 
+                .transparent .nav-right > a {
+                    color: #FFF
+                }
+
                 .nav-right a:first-child {
-                    color: var(--purple-color);
                     margin: 0;
                 }
 
@@ -155,6 +161,10 @@ html {
                 }
                 #toggle {
                     display: none;
+                }
+
+                .nav-right > a.active {
+                    color: var(--purple-color);
                 }
 
     /* navigation responsive */

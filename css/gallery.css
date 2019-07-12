@@ -1,6 +1,4 @@
-#portfolio {
 
-}
 .gallery_filter {
     display: inline-block;
     text-align: center;
@@ -19,16 +17,16 @@
         letter-spacing: 2px;
     }
         .gallery_filter .filter:hover,
-        .active {
+        .active-hhh {
                 color: var(--purple-color);
         }
         
-        .gallery_filter  .active {
+        .gallery_filter  .active-hhh {
             transition: border .5s;
             border-top: 1px solid var(--grey-color);
             color: var(--purple-color);
         }
-        .active::after {
+        .active-hhh::after {
             content: '';
             width: 3px;
             height: 3px;

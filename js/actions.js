@@ -1,6 +1,15 @@
 "use strict";
+<<<<<<< Updated upstream
 // navigation 
 document.querySelector('nav-row').innerHTML = burger();
+=======
+// general
+window.addEventListener("scroll", function(){
+    headerScrollDetector();
+    headerStyle();
+});
+
+>>>>>>> Stashed changes
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
