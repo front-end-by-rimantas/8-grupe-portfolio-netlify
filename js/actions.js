@@ -1,15 +1,13 @@
 "use strict";
-<<<<<<< Updated upstream
 // navigation 
-document.querySelector('nav-row').innerHTML = burger();
-=======
+burger();
+
 // general
 window.addEventListener("scroll", function(){
     headerScrollDetector();
     headerStyle();
 });
 
->>>>>>> Stashed changes
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
@@ -21,10 +19,6 @@ document.getElementById('blogright').innerHTML = generateProgressBar(progressBar
 // services
 
 document.querySelector('.services_wrapper').innerHTML = generateServicesBox( servicesBox );
-
-
-
-
 
 // blog
 
@@ -41,6 +35,5 @@ document.querySelector('#contact .contact-info').innerHTML = generateContactInfo
 
 document.querySelector('.gallery_filter').innerHTML = generateGalleryFilter( galleryFilter );
 
-clickActive()
-
 // footer
+getDate();

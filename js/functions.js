@@ -1,16 +1,13 @@
 "use strict";
-<<<<<<< Updated upstream
 // navigation
 function burger() {
     var navMobile = document.getElementById('main-nav');
-    var navBarToggle = document.getElementById('toggle');
+    var navBarToggle = document.getElementById('toggle');    
 
     navBarToggle.addEventListener('click', function () {        
         navMobile.classList.toggle('active-burger');
     });    
 }
-
-=======
 
 // header
 
@@ -69,7 +66,7 @@ function headerStyle() {
         element.className += ' transparent';
     }
 }
->>>>>>> Stashed changes
+
 // hero
 function generateIcons( data ) {
     var HTML = '';
@@ -86,7 +83,6 @@ function generateIcons( data ) {
 }
 
 //skills
-
 function generateProgressBar(data) {
     var HTML = '';
 
@@ -108,7 +104,6 @@ function generateProgressBar(data) {
 }
 
 // services
-
 function generateServicesBox ( data ) {
     var HTML = '';
 
@@ -123,9 +118,7 @@ function generateServicesBox ( data ) {
     return HTML;
 }
 
-
 // contact
-
 function generateContactForm ( data ) {
     var HTML = '<contact-form>',
     field,
@@ -206,10 +199,7 @@ function generateContactInfo ( data ) {
     return HTML;
 } 
 
-
-
 //blog
-
 function generateBlog( data ) {
     var HTML = '';
 
@@ -233,16 +223,9 @@ function generateBlog( data ) {
 
     return HTML;
 }
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
 
 // gallery
-
-
-    function generateGalleryFilter ( data ) {
+function generateGalleryFilter ( data ) {
         var HTML = '';
 
         for ( var i=0; i<data.length; i++) {
@@ -251,26 +234,9 @@ function generateBlog( data ) {
         return HTML;
     }
 
-    // active class for gallery filters
-    function clickActive() {
-        var filterHead = document.getElementById("gallery_head");
-        var filter_active = filterHead.getElementsByClassName("filter");
-        for (var i = 0; i < filter_active.length; i++) {
-        filter_active[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        if (current.length > 0) { 
-            current[0].className = current[0].className.replace(" active", "");
-        }
-        this.className += " active-hhh";
-        });
-        }
-    }
-
 // footer
 function getDate(){
     var today = new Date();
     var year = today.getFullYear();
     document.getElementById("currentDate").innerHTML = year;
   }
-  
-  getDate();

@@ -20,8 +20,12 @@
         .active-hhh {
                 color: var(--purple-color);
         }
-        
-        .gallery_filter  .active-hhh {
+
+                /* ----------
+                dėl header scroll dektoriaus, šiuo metu vistiek neveikia
+                   ---------- */
+
+        /* .gallery_filter  .active-hhh {
             transition: border .5s;
             border-top: 1px solid var(--grey-color);
             color: var(--purple-color);
@@ -35,7 +39,8 @@
             left: 45%;
             top: 100%;
             background-color: var(--purple-color);
-        }
+        } */
+        
 .gallery_container {
     width: 100%;
     display: flex;
