@@ -109,7 +109,7 @@ html {
     }
 
     #header.transparent {
-        background-color: var(--white-color)transparent;
+        background-color: transparent;
     }
         .nav-container .nav-row {
             width: 1140px;
