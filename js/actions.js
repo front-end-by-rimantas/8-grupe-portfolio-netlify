@@ -2,12 +2,12 @@
 // navigation 
 burger();
 
-// general
+// header
 window.addEventListener("scroll", function(){
     headerScrollDetector();
     headerStyle();
 });
-
+headerStyle();
 // hero
 document.getElementById('hero_icons').innerHTML = generateIcons( heroIcons );
 
