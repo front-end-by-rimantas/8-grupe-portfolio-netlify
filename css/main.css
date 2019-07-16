@@ -120,6 +120,7 @@ html {
             .logo {
                 display:inline-block;
                 float: left;
+                background-image: inherit;
                 padding-top: 13px;
                 padding-left: 15px;
             }
