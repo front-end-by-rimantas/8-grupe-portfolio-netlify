@@ -116,20 +116,32 @@ html {
             height: 60px;
             line-height: 60px;
         }
-        
+            .transparentlogo {
+                display:inline-block;
+                float: left;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+
+                .transparentlogo img {
+                    display:inline-block;
+                    width: 100px;
+                }
             .logo {
                 display:inline-block;
                 float: left;
-                background-image: inherit;
                 padding-top: 13px;
                 padding-left: 15px;
+                margin-left: -115px;
             }
 
                 .logo img {
                     display:inline-block;
                     width: 100px;
                 }
-
+                .transparent .nav-row >a.logo {
+                    display: none;
+                }
             .nav-right{
                 display: inline-block;
                 float: right;
